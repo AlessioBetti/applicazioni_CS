@@ -37,8 +37,7 @@ public class Client {
             dos = new DataOutputStream(socket.getOutputStream());
             stringFromServer = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             
-        }
-        catch(UnknownHostException ex){
+        } catch(UnknownHostException e){
             System.err.println("host sconosciuto!");
         }
         catch (IOException e){
